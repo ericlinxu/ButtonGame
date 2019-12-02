@@ -20,12 +20,17 @@
         android:id="@+id/playGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play Game" />
+        android:layout_marginBottom="304dp"
+        android:text="Play Game"
+        app:layout_constraintBottom_toBottomOf="@+id/instructions"
+        tools:layout_editor_absoluteX="101dp" />
 
     <Button
         android:id="@+id/instructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How To Play" />
+        android:text="How To Play"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="470dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

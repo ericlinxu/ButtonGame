@@ -3,71 +3,30 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/stickTwo"
+    <EditText
+        android:id="@+id/stickNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Two" />
+        android:ems="10"
+        android:inputType="number" />
 
     <TextView
-        android:id="@+id/stickOne"
+        android:id="@+id/win"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="One" />
+        android:text="You Win!" />
 
     <TextView
-        android:id="@+id/stickThree"
+        android:id="@+id/lose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Three" />
+        android:text="You Lose :(" />
 
-    <TextView
-        android:id="@+id/stickFour"
+    <Button
+        android:id="@+id/restart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Four" />
-
-    <TextView
-        android:id="@+id/stickFive"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Five" />
-
-    <TextView
-        android:id="@+id/stickSix"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Six" />
-
-    <TextView
-        android:id="@+id/stickSeven"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Seven" />
-
-    <TextView
-        android:id="@+id/stickEight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Eight" />
-
-    <TextView
-        android:id="@+id/stickNine"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nine" />
-
-    <TextView
-        android:id="@+id/stickTen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ten" />
-
-    <TextView
-        android:id="@+id/stickEleven"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Eleven" />
+        android:text="Go Back to Main Menu" />
 
     <Button
         android:id="@+id/one"

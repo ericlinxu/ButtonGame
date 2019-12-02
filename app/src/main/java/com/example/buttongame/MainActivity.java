@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         final Button playGame = findViewById(R.id.playGame);
         final Button instructions = findViewById(R.id.instructions);
         playGame.setVisibility(View.VISIBLE);
@@ -25,7 +27,5 @@ public class MainActivity extends AppCompatActivity {
             instructions.setVisibility(View.GONE);
             startActivity(new Intent(this, Instructions.class));
         });
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
 }
