@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/stickTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Two" />
+
+    <TextView
+        android:id="@+id/stickOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="One" />
+
+    <TextView
+        android:id="@+id/stickThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Three" />
+
+    <TextView
+        android:id="@+id/stickFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Four" />
+
+    <TextView
+        android:id="@+id/stickFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Five" />
+
+    <TextView
+        android:id="@+id/stickSix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Six" />
+
+    <TextView
+        android:id="@+id/stickSeven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seven" />
+
+    <TextView
+        android:id="@+id/stickEight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eight" />
+
+    <TextView
+        android:id="@+id/stickNine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nine" />
+
+    <TextView
+        android:id="@+id/stickTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ten" />
+
+    <TextView
+        android:id="@+id/stickEleven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eleven" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2" />
+
+</LinearLayout>
