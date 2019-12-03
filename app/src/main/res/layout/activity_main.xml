@@ -8,12 +8,13 @@
 
     <Button
         android:id="@+id/playGame"
-        android:layout_width="wrap_content"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
         android:layout_marginTop="317dp"
         android:layout_marginEnd="155dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="#acdf87"
         android:text="Play Game"
         app:layout_constraintBottom_toTopOf="@+id/instructions"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,12 +23,13 @@
 
     <Button
         android:id="@+id/instructions"
-        android:layout_width="wrap_content"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="147dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="147dp"
         android:layout_marginBottom="310dp"
+        android:background="#ffc0cb"
         android:text="How To Play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
