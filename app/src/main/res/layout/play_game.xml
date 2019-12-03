@@ -23,12 +23,6 @@
         android:text="You Lose :(" />
 
     <Button
-        android:id="@+id/restart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Go Back to Main Menu" />
-
-    <Button
         android:id="@+id/one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,5 +33,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="2" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu" />
 
 </LinearLayout>

@@ -21,9 +21,11 @@ public class Instructions extends AppCompatActivity {
         TextView title = findViewById(R.id.title);
         String header = "How to Play";
         title.setText(header);
-        String text = "There are 21 counts in this game. You get to choose 1 or 2 sticks every turn. " +
-                "In order to win, you cannot be the person to grab the last count. " +
-                "If you grab the last count, you lose.";
+        String text = "There are 21 sticks that you and your opponent can take from.\n" +
+                "On each turn, you have to take either one or two sticks.\n" +
+                "If you take the last stick, you lose.\n" +
+                "If your opponent takes the last stick, you win.\n" +
+                "Good luck!";
         how.setText(text);
     }
 }
