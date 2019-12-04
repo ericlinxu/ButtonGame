@@ -2,23 +2,14 @@ package com.example.buttongame;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PlayComp extends AppCompatActivity {
     private String number = "21";
-    //public EditText numberSticks = findViewById(R.id.stickNum);
-    //private int num = Integer.parseInt(numberSticks.getText().toString());
-
-    //private Button one = findViewById(R.id.one);
-    //private Button two = findViewById(R.id.two);
-    //private TextView lose = findViewById(R.id.lose);
-    //private TextView win = findViewById(R.id.win);
 
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +20,8 @@ public class PlayComp extends AppCompatActivity {
         TextView numberSticks = findViewById(R.id.stickNum);
         numberSticks.setText(number);
         Button restart = findViewById(R.id.restart);
-        TextView lose = findViewById(R.id.lose);
-        TextView win = findViewById(R.id.win);
-        lose.setVisibility(View.GONE);
-        win.setVisibility(View.GONE);
+        TextView currentLine = findViewById(R.id.message);
+        String l = "You Lose :(";
 
         Button one = findViewById(R.id.one);
         Button two = findViewById(R.id.two);
@@ -43,7 +32,7 @@ public class PlayComp extends AppCompatActivity {
         if (number.equals("0")) {
             one.setVisibility(View.GONE);
             two.setVisibility(View.GONE);
-            lose.setVisibility(View.VISIBLE);
+            currentLine.setText(l);
         }
 
         restart.setOnClickListener(unused -> startActivity(new Intent(this, MainActivity.class)));
@@ -68,16 +57,19 @@ public class PlayComp extends AppCompatActivity {
     }
     public void computer() {
         TextView numberSticks = findViewById(R.id.stickNum);
-        TextView message = findViewById(R.id.compStick);
-        TextView win = findViewById(R.id.win);
-        TextView lose = findViewById(R.id.lose);
+        TextView currentLine = findViewById(R.id.message);
+
         Button one = findViewById(R.id.one);
         Button two = findViewById(R.id.two);
+
+        String w = "You Win!!!";
+        String l = "You Lose :(";
+
         int rand = (int) (Math.random() * 2) + 1;
         if (number.equals("0")) {
             one.setVisibility(View.GONE);
             two.setVisibility(View.GONE);
-            lose.setVisibility(View.VISIBLE);
+            currentLine.setText(l);
         } else if(number.equals("1")) {
             two.setVisibility(View.GONE);
             int num = Integer.parseInt(number);
@@ -85,18 +77,17 @@ public class PlayComp extends AppCompatActivity {
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
             String mess = "The computer took 1.";
-            message.setText(mess);
-            message.setVisibility(View.VISIBLE);
+            currentLine.setText(mess);
             one.setVisibility(View.GONE);
-            win.setVisibility(View.VISIBLE);
+            currentLine.setText(w);
         } else if (number.equals("3")) {
             int num = Integer.parseInt(number);
             num = num - 2;
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
             String mess = "The computer took 2.";
-            message.setText(mess);
-            message.setVisibility(View.VISIBLE);
+            currentLine.setText(mess);
+            currentLine.setVisibility(View.VISIBLE);
             play();
         } else if (number.equals("2")) {
             int num = Integer.parseInt(number);
@@ -104,8 +95,8 @@ public class PlayComp extends AppCompatActivity {
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
             String mess = "The computer took 1.";
-            message.setText(mess);
-            message.setVisibility(View.VISIBLE);
+            currentLine.setText(mess);
+            currentLine.setVisibility(View.VISIBLE);
             play();
         } else {
             int num = Integer.parseInt(number);
@@ -113,8 +104,8 @@ public class PlayComp extends AppCompatActivity {
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
             String mess = "The computer took " + rand;
-            message.setText(mess);
-            message.setVisibility(View.VISIBLE);
+            currentLine.setText(mess);
+            currentLine.setVisibility(View.VISIBLE);
             play();
         }
     }
