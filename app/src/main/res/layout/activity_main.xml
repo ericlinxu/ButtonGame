@@ -6,34 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="912dp"
+        android:text="Button Game"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#acdf87"
+        android:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
     <Button
         android:id="@+id/playGame"
         android:layout_width="230dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginStart="155dp"
-        android:layout_marginTop="317dp"
+        android:layout_marginTop="290dp"
         android:layout_marginEnd="155dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="1dp"
         android:background="#acdf87"
-        android:text="Play Game"
+        android:text="2 Player Mode"
         app:layout_constraintBottom_toTopOf="@+id/instructions"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/instructions"
-        android:layout_width="230dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="147dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="147dp"
-        android:layout_marginBottom="310dp"
+        android:layout_marginBottom="32dp"
         android:background="#ffc0cb"
         android:text="How To Play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playGame" />
+
+    <Button
+        android:id="@+id/computer"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="16dp"
+        android:background="#acdf87"
+        android:text="1 Player Mode"
+        app:layout_constraintBottom_toTopOf="@+id/playGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
