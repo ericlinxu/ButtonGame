@@ -17,6 +17,10 @@ public class PlayGame extends AppCompatActivity {
         setContentView(R.layout.play_game);
         play();
     }
+
+    /**
+     * For both players to play the game.
+     */
     public void play() {
         //Initialize
         TextView numberSticks = findViewById(R.id.stickNum);
@@ -66,7 +70,7 @@ public class PlayGame extends AppCompatActivity {
         });
         two.setOnClickListener(unused -> {
             int num = Integer.parseInt(number);
-            num = num - 2;
+            num -= 2;
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
             play();
