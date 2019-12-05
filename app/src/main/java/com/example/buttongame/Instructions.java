@@ -21,10 +21,10 @@ public class Instructions extends AppCompatActivity {
         TextView title = findViewById(R.id.title);
         String header = "How to Play";
         title.setText(header);
-        String text = "There are 21 sticks that you and your opponent can take from.\n" +
-                "On each turn, you have to take either one or two sticks.\n" +
-                "If you take the last stick, you lose.\n" +
-                "If your opponent takes the last stick, you win.\n" +
+        String text = "There are 21 points that you and your opponent can take from.\n" +
+                "On each turn, you have to take either one or two points.\n" +
+                "If you take the last point, you lose.\n" +
+                "If your opponent takes the last point, you win.\n" +
                 "Good luck!";
         how.setText(text);
     }

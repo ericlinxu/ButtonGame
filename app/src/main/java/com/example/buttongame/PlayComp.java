@@ -2,7 +2,6 @@ package com.example.buttongame;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -52,7 +51,6 @@ public class PlayComp extends AppCompatActivity {
             num--;
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
-            //SystemClock.sleep(2000);
             computer();
         });
         two.setOnClickListener(unused -> {
@@ -60,7 +58,6 @@ public class PlayComp extends AppCompatActivity {
             num = num - 2;
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
-            //SystemClock.sleep(2000);
             computer();
         });
     }
@@ -90,7 +87,7 @@ public class PlayComp extends AppCompatActivity {
             num--;
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
-            String mess = "The computer took 1.";
+            String mess = "The computer took 1";
             currentLine.setText(mess);
             one.setVisibility(View.GONE);
             currentLine.setText(win);
@@ -99,7 +96,7 @@ public class PlayComp extends AppCompatActivity {
             num = num - 2;
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
-            String mess = "The computer took 2.";
+            String mess = "The computer took 2";
             currentLine.setText(mess);
             currentLine.setVisibility(View.VISIBLE);
             play();
@@ -108,7 +105,7 @@ public class PlayComp extends AppCompatActivity {
             num--;
             number = String.valueOf(num);
             numberSticks.setText(String.valueOf(num));
-            String mess = "The computer took 1.";
+            String mess = "The computer took 1";
             currentLine.setText(mess);
             currentLine.setVisibility(View.VISIBLE);
             play();
